@@ -1,1 +1,1 @@
-Each folder contains one test task. All of them are from companies in St.Petersburg
+Each folder contains one test task from a company located in St.Petersburg
