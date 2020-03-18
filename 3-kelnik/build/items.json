@@ -1,0 +1,186 @@
+{
+  "items": [{
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №1144",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано",
+      "discount": "50%",
+      "label": "скидка"
+    }, {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №2244",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано",
+      "discount": "50%",
+      "label": "скидка"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    },
+    {
+      "class": "item-booked",
+      "src": "/assets/img/plan-1.png",
+      "name": "Студия №3344",
+      "furnish": "без отделки",
+      "square": "28 м",
+      "floor": "12/14",
+      "pricetext": "1 900 000 руб.",
+      "status": "забронировано"
+    }
+  ]
+}

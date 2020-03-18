@@ -1,0 +1,38 @@
+.close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  transition: visibility 0.1s ease-in;
+  visibility: hidden;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 4px;
+  content: ' ';
+  height: 12px;
+  width: 2px;
+  background-color: #4488bb;
+  top: 0;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.form-group.error .close:after,
+.form-group.error .close:before {
+  background-color: #bb4444;
+}
+
+.form-group.error .close,
+.form-group.not-empty .close {
+  visibility: visible;
+}

@@ -1,0 +1,16 @@
+extends _layouts/_index-layout  
+//- include _mixins/index   
+
+block content
+  .form__wrapper
+    h2 Вход
+    form.form(action="")
+        .form-input__wrapper
+            .form-input__email
+                input(type="email" placeholder="Логин" autocomplete='on' name='email')
+                include ../images/icons/email.svg      
+            .form-input__password
+                input(type="password" placeholder="Пароль" autocomplete='on' name='password')
+                include ../images/icons/password.svg      
+        p.form__error
+        button.form__submit Войти  

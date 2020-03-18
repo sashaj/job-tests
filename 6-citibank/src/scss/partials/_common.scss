@@ -1,0 +1,48 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  @media (max-width: 600px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.content {
+  max-width: 1190px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "Arial - Bold MT";
+  font-size: 48px;
+  line-height: 0.75;
+  @media (max-width: 600px) {
+    font-size: 32px;
+  }
+}
+.button {
+  font-family: Arial;
+  color: #eeeeee;
+  font-size: 16px;
+  background-image: linear-gradient(to bottom, #4488bb 0%, #2e5d80 100%);
+  border-radius: 2px;
+  height: 30px;
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.hyperlink {
+  color: #aaaaaa;
+  font-family: Arial;
+  font-size: 16px;
+}

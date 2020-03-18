@@ -1,0 +1,126 @@
+.posts-content {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  flex-direction: column;
+  @media (max-width: 1000px) {
+    padding: 30px 0;
+  }
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.post {
+  height: 150px;
+  position: relative;
+  margin-right: 10px;
+  overflow: hidden;
+  &:last-child {
+    margin-right: 0;
+    @media (max-width: 1000px) {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 1000px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 200px;
+  }
+  @media (max-width: 600px) {
+    height: 170px;
+  }
+}
+
+.post__img {
+  width: 100%;
+  height: 100%;
+}
+
+.post__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post.open .post__desctiption {
+  transform: translateY(-100%);
+  padding-top: 15px;
+  @media (max-width: 600px) {
+    padding-top: 15px;
+  }
+}
+
+.post__desctiption {
+  width: 100%;
+  height: 100%;
+  background-color: transparentize(#4488bb, 0.25);
+  padding: 10px 20px;
+  transform: translateY(-40px);
+  transition: transform 0.2s ease-in;
+  @media (max-width: 600px) {
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+}
+
+.post-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.post__title {
+  font-size: 24px;
+  font-family: 'Arial - Bold MT';
+  color: #eeeeee;
+  line-height: 22px;
+}
+
+.icon-cubes {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.post__text {
+  color: #eeeeee;
+  font-size: 14px;
+  font-family: Arial;
+  line-height: 18px;
+  max-height: 90px;
+  overflow-y: auto;
+  @media (max-width: 600px) {
+    padding-right: 5px;
+    max-height: 110px;
+  }
+}
+
+.posts-row-1,
+.posts-row-2 {
+  display: flex;
+  width: 100%;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+.posts-row-1 {
+  margin-bottom: 25px;
+  @media (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
+}
+.posts-row-1 .post {
+  width: 33%;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
+.posts-row-2 .post {
+  width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}

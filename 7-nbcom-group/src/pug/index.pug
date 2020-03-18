@@ -1,0 +1,15 @@
+extends partials/_index-layout  
+
+block content
+  .main__content
+    .container 
+      //- include partials/_footer
+      h3.loading Loading data..
+      .wrapper
+        form#configurator(name='configurator')
+        button.submit.display-none submit 
+        .result.display-none
+          .config
+            h3 Macbook
+          .complect
+            h3 В комлекте:

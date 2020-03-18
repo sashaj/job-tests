@@ -1,0 +1,17 @@
+.menu-sidebar
+  .menu-sidebar__wrapper
+    .menu-sidebar__closer
+    .menu-sidebar__content
+      form.menu-sidebar__form(action="#")
+        .menu-sidebar__search-wrapper
+          include ../../images/icons/magnify.svg
+          input(type='search' placeholder="Search").menu-sidebar__search
+        ul.menu-sidebar__list    
+          li
+            a(href="#") What is lorem ipsum?
+          li.active
+            a(href="#") Why do we use
+          li
+            a(href="#") Come from 
+        button(type="submit" data-url="#").button.button-glass.menu-sidebar__form-submit Get Lorem    
+  //- .menu-sidebar__overlay 

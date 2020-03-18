@@ -1,0 +1,59 @@
+.hero__wrapper {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  // img {
+  //   height: 100%;
+  //   width: 100%;
+  //   object-fit: cover;
+  // }
+  background-repeat: no-repeat;
+  background-image: url("../img/hero-background.jpg");
+  background-size: cover;
+  background-position: 65% center;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+.hero__title-wrapper {
+  // position: absolute;
+  // left: 17.7%;
+  // top: 50%;
+  // transform: translateY(-67%);
+  margin-left: 16.7%;
+  display: flex;
+  @media (max-width: 600px) {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: -25px;
+    margin-left: 0;
+  }
+}
+
+.hero__title {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+  /* Text style for "Lorem" */
+  font-family: "Myriad Pro";
+  /* Text style for "Ipsum" */
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  margin: 0;
+  @media (max-width: 1450px) {
+    font-size: 70px;
+  }
+  @media (max-width: 768px) {
+    font-size: 58px;
+  }
+}
+
+.hero__title-bold {
+  letter-spacing: 4px;
+  font-weight: 700;
+}

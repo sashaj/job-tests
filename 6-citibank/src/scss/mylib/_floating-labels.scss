@@ -1,0 +1,27 @@
+.form-group {
+  position: relative;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 0 0 10px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-family: Arial;
+  font-size: 16px;
+  color: #aaaaaa;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder,
+body .form-group.not-empty .form-control-placeholder,
+body .form-group.error .form-control-placeholder {
+  font-size: 10px;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -45%, 0);
+  opacity: 1;
+}

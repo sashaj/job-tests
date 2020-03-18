@@ -1,0 +1,167 @@
+.modal {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.modal__wrapper {
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+
+  &.active {
+    display: block;
+  }
+  @media (max-width: 600px) {
+    top: 56px;
+  }
+}
+
+.modal__content {
+  position: relative;
+  max-width: 410px;
+  width: 100%;
+  padding: 40px;
+  background: #ffffff;
+  margin: 0 auto;
+  margin-top: 180px;
+  @media (max-width: 600px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    max-width: initial;
+    height: 100%;
+    margin-top: 0;
+  }
+}
+
+.freezePage {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  @media (max-width: 600px) {
+  }
+}
+
+.modal__header {
+  color: #232d37;
+  font-family: "Open Sans - Semibold";
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  letter-spacing: 0.29px;
+  display: block;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.modal__description {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #232d37;
+  line-height: 25.05px;
+  letter-spacing: 0.19px;
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+  @media (max-width: 600px) {
+    text-align: left;
+    line-height: 18px;
+    font-family: "Open Sans - Semibold";
+  }
+}
+.modal__bold-text {
+  color: #232d37;
+  font-family: "Open Sans - Bold";
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+  /* Text style for "Lorme is i" */
+  letter-spacing: 0.17px;
+  margin-bottom: 5px;
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+.modal__select {
+  height: 36px;
+  border: 1px solid #b9c3cd;
+  background-color: #ffffff;
+  width: 100%;
+  margin-bottom: 25px;
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    border: solid #00aaff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: 6px;
+  }
+  @media (max-width: 600px) {
+  }
+}
+
+.modal__button {
+  height: 36px;
+  margin-left: auto;
+  display: block;
+  color: #ffffff;
+  font-family: "Open Sans Light";
+  font-size: 16px;
+  letter-spacing: 0.26px;
+  @media (max-width: 600px) {
+    font-family: "Open Sans - Semibold";
+    font-size: 14px;
+
+    letter-spacing: 0.23px;
+  }
+}
+
+.modal__closer {
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  @media (max-width: 600px) {
+    right: 20px;
+  }
+
+  &:after,
+  &:before {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 14px;
+    background-color: #00aaff;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 7px;
+    top: 0px;
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+}

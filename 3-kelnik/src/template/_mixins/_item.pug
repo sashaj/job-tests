@@ -1,0 +1,28 @@
+mixin item(className, src, name, furnish, square, floor, pricetext, status, discount, label)
+  .item(class=className data-fav='0')
+    .item__content
+      .item__header
+        .item__labels
+          if discount
+            .item__discount= discount
+          if label
+            .item__label= label
+          .item__star
+            include ../../images/star.svg 
+      .item__body
+        .item__img
+          img(src=src)
+        span.item__name= name
+        .item__description
+          span.item__furnish= furnish
+          .item__square
+            span.item-square__number= square
+            span.item-square__text площадь                 
+          .item__floor  
+            span.item-floor__number= floor
+            span.item-floor__text этаж
+        span.item__price= pricetext
+      .item__footer
+        .item__status= status
+                  
+                      

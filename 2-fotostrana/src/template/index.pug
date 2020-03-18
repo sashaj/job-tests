@@ -1,0 +1,23 @@
+extends _layouts/_index-layout  
+//- include _mixins/index   
+
+block content
+  .main__content
+    .container 
+      h1 Каталог фильмов
+      .search
+        img(src='./assets/img/icons/search.svg').search__icon 
+        input(type='text' placeholder="Введите название фильма").search__input
+      #tos.items__wrapper
+      button(type='button' class='show-more') показать еще
+      .modal__loader
+        .roller__wrapper
+          .lds-roller
+            div
+            div
+            div
+            div
+            div
+            div
+            div  
+            div

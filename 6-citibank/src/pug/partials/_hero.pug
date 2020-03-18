@@ -1,0 +1,36 @@
+section.hero-section
+    .wrapper.hero-wrapper
+        .hero__background
+            img(src='assets/images/hero-background.jpg')
+        .content.hero-content
+            .hero__left
+                h2.hero__title Banner header
+                p.hero__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            .hero__right
+                form(action="#").request-form#request-form
+                    .form__title Request form
+                    .form-group
+                        input#user-email.form-control(type='email', required='' name='user-email')
+                        label.form-control-placeholder(for='user-email') Enter your E-mail
+                        button(type='button').close.input-close
+                        .tippy Enter correct E-mail               
+                    .form-group
+                        input#user-name.form-control(type='text', required='' name='user-name')
+                        label.form-control-placeholder(for='user-name') Enter your name
+                        button(type='button').close.input-close
+                        .tippy Enter correct Name              
+                    .request-form__select
+                        select#user-country
+                            option(disabled selected) Select your country
+                            option Finland
+                            option Russia
+                        .tippy select your country
+                    .form__input-checkbox
+                        label.checkbox I agree with terms and conditions
+                            input(type='checkbox' name='user-terms')#user-terms
+                            span.checkbox__checkmark
+                        .tippy agree to the terms
+                    .request-form__footer
+                        button(type='submit' action="#").button-submit.button Submit
+                        a(href="#").hyperlink Hyperlink            
+

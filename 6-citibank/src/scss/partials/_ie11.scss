@@ -1,0 +1,11 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .error .tippy {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  input::-ms-clear {
+    display: none;
+  }
+}

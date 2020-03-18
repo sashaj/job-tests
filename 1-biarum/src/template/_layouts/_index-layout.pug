@@ -1,0 +1,19 @@
+include ../_mixins/index
+doctype html
+html(lang='ru-RU') 
+  include ../_partials/_head
+
+  body
+    .wrapper
+      // === HEADER BEGIN ===
+      include ../_partials/_header
+      // === HEADER END ===
+
+      .main
+        include ../_partials/_menu-sidebar
+        block content
+
+      // === FOOTER BEGIN ===
+      include ../_partials/_footer
+      include ../_partials/_modal
+      // === FOOTER END ===

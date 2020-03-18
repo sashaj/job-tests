@@ -1,0 +1,35 @@
+{
+  "extends": ["prettier", "airbnb"],
+  "rules": {
+    "linebreak-style": 0,
+    "wrap-iife": [2, "any"],
+    "func-names": [0, "never"],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "space-before-function-paren": 0,
+    "no-plusplus": 0,
+    "arrow-parens": 0,
+    "no-mixed-operators": 0,
+    "class-methods-use-this": 0,
+    "prefer-arrow-callback": 1,
+    "no-underscore-dangle": 0,
+    "function-paren-newline": 0,
+    "no-use-before-define": 1,
+    "no-alert": 1,
+    "no-console": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "$": true,
+    "ymaps": true,
+    "grecaptcha": true,
+    "google": true
+  }
+}

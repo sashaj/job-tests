@@ -1,0 +1,17 @@
+include ../_mixins/index
+doctype html
+html(lang='ru-RU') 
+  include ../_partials/_head
+
+  body
+    .wrapper
+      // === HEADER BEGIN ===
+      include ../_partials/_header
+      // === HEADER END ===
+      .button-up.display-none       
+      .main
+        block content
+
+      // === FOOTER BEGIN ===
+      include ../_partials/_footer
+      // === FOOTER END ===

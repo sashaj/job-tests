@@ -1,0 +1,50 @@
+.button {
+  height: 40px;
+  font-family: "Open Sans - Bold";
+  font-size: 16px;
+  border-radius: 3px;
+  letter-spacing: 0.26px;
+  // padding-left: 22px;
+  // padding-right: 22px;
+  padding-left: 34px;
+  padding-right: 34px;
+  @media (max-width: 600px) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+// .button-big {
+//   padding-left: 34px;
+//   padding-right: 34px;
+//   @media (max-width: 600px) {
+//     padding-left: 22px;
+//     padding-right: 22px;
+//   }
+// }
+
+.button-glass {
+  color: #00aaff;
+  border: 1px solid #00aaff;
+  background-color: #fff;
+}
+
+.button-blue-light {
+  background-color: #46c3ff;
+  color: #fff;
+}
+
+.button-blue {
+  color: #fff;
+  border: none;
+  background-color: #00aaff;
+}
+
+.button-blue-dark {
+  background-color: #0096e1;
+  color: #055f8c;
+}
+
+.button:disabled,
+.button[disabled] {
+  opacity: 30%;
+}

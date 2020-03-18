@@ -1,0 +1,50 @@
+extends _layouts/_index-layout  
+include _mixins/index   
+
+block content
+  .main__content
+    .container 
+      span.found Найдено 666 квартир
+      section
+        .results
+          .sorting
+            span.sorting__label Cортировать по:
+            .sorting__item.sorting__item-price
+              span Цене
+              i.arrow               
+            .sorting__item.sorting__item-rooms
+              span Комнатам
+              i.arrow
+          .results__content
+            +item('item-booked', 'assets/img/plan-1.png', 'Студия №44', 'без отделки', '28 м', '12/14', '1 900 000 руб.', 'забронировано')     
+            +item('item-free', 'assets/img/plan-2.png', 'Однокомнатная №666', 'базовая отделка', '66 м', '6/6', '1 666 666 руб.', 'свободно')     
+            +item('item-sold', 'assets/img/plan-3.png', 'Двухкомнатная №567', 'черновая отделка', '65.6 м', '7/14', '5 900 000 руб.', 'продано')     
+            +item('item-booked', 'assets/img/plan-4.png', 'Трехкомнатная №45', 'без отделки', '56 м', '1/14', '12 900 000 руб.', 'забронировано')     
+            +item('item-booked', 'assets/img/plan-5.png', 'Студия №25', 'черновая отделка', '18 м', '12/14', '1 900 000 руб.', 'забронировано', '-17%', "ШОК ЦЕНА!")     
+            +item('item-booked', 'assets/img/plan-6.png', 'Четырехкомнатная №259', 'черновая отделка', '98 м', '14/14', '23 900 000 руб.', 'забронировано', '-6%')     
+            +item('item-free', 'assets/img/plan-7.png', 'Однокомнатная №56', 'без отделки', '36 м', '3/6', '5 666 666 руб.', 'свободно')     
+            +item('item-free', 'assets/img/plan-8.png', 'Трехкомнатная №46', 'черновая отделка', '86 м', '1/6', '5 696 663 руб.', 'свободно')     
+            +item('item-free', 'assets/img/plan-9.png', 'Однокомнатная №2', 'черновая отделка', '18 м', '3/14', '1 200 000 руб.', 'забронировано', '-9%', "ШОК ЦЕНА!")     
+            +item('item-free', 'assets/img/plan-10.png', 'Студия №12', 'черновая отделка', '38 м', '6/14', '1 500 500 руб.', 'забронировано')     
+            +item('item-free', 'assets/img/plan-11.png', 'Однокомнатная №8', 'черновая отделка', '48 м', '3/14', '6 200 000 руб.', 'забронировано')     
+            +item('item-free', 'assets/img/plan-12.png', 'Двухкомнатная №23', 'базовая отделка', '48 м', '6/14', '5 255 006 руб.', 'забронировано', '-6%')     
+          button(type="button").show-more Показать еще 20
+      section
+        .subscribe
+          .subscribe__left
+            span.subscribe__header Успей купить!
+            span.subscribe__text Подпишись и успей словить все акции
+        
+          .subscribe__right
+            form.subscribe-form
+              .subscribe-form__left
+                input(type='email' placeholder="E-mail" name="email" required).subscribe-form__email
+                .form__input-checkbox
+                  label.checkbox
+                    | подписаться на новости
+                    input(type='checkbox', name='subscribe', checked)
+                    span.checkbox__checkmark
+              .subscribe-form__right          
+                button(type="button").subscribe-form__submit подписаться
+
+              

@@ -1,0 +1,44 @@
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  position: relative;
+  padding: 50px 0px;
+}
+
+.group__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.input__wrapper {
+  margin-bottom: 20px;
+}
+
+.input__wrapper span {
+  display: block;
+}
+.input__wrapper label {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.group__title {
+  margin-bottom: 20px;
+}
+
+.submit {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  border: 1px solid black;
+  height: 30px;
+  width: 60px;
+}
+
+.config {
+  margin-bottom: 15px;
+}

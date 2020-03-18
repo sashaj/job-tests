@@ -1,0 +1,32 @@
+.where__wrapper .section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #e1e4e6;
+  padding-bottom: 50px;
+  @media (max-width: 600px) {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+
+.where__wrapper .text {
+  margin-bottom: 25px;
+  @media (max-width: 600px) {
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+.where__wrapper .text a {
+  display: inline;
+}
+.where__wrapper h3 {
+  @media (max-width: 600px) {
+    font-family: "Open Sans Light";
+    font-size: 18px;
+    line-height: 1.25;
+  }
+}
