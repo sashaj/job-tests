@@ -1,4 +1,4 @@
--Each folder contains one completed test task from a company located in St.Petersburg.
--You can find employer's task in 'task-from-employer' folder. 
--Every test project is numbered in order of its completion. (1 - the oldest, then 2 - completed after 1, ...)
+-Each folder contains one completed test task from a company located in St.Petersburg.  
+-You can find employer's task in 'task-from-employer' folder.  
+-Every test project is numbered in order of its completion. (1 - the oldest, then 2 - completed after 1, ...)  
 -I advise you to start with the latest project, because the projects were done with different skill level. And the last correposponds the most with current level.
