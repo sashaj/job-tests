@@ -94,6 +94,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .card__front {

@@ -10,12 +10,14 @@
       :sum="sum"
     >
     </PaymentCard>
+    <inputCheckbox></inputCheckbox>
   </div>
 </template>
 
 <script>
 import InputSum from "../components/input-sum";
 import PaymentCard from "../components/payment-card";
+import inputCheckbox from "../components/input-checkbox";
 
 export default {
   name: "payment-page",
@@ -24,7 +26,8 @@ export default {
   },
    components: {
     InputSum,
-    PaymentCard
+    PaymentCard,
+    inputCheckbox
   },
   data() {
     return {
