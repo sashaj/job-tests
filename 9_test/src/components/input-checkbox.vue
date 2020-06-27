@@ -42,7 +42,7 @@ export default {
   user-select: none;
   font-size: 15px;
   font-family: "Arial";
-  padding-right: 60px;
+  margin-right: 60px;
   color: #333333;
   text-align: left;
 
@@ -101,6 +101,6 @@ export default {
 }
 .input-checkbox{
   display: flex;
-  // align-items: flex-start;
+  margin-bottom: 40px;
 }
 </style>

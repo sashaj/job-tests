@@ -10,14 +10,28 @@
       :sum="sum"
     >
     </PaymentCard>
-    <inputCheckbox></inputCheckbox>
+    <InputCheckbox></InputCheckbox>
+    <Banner>
+      <div class="payment__banner">
+        <div class="banner-left">
+          <span class="banner__title">Итого к зачислению</span>
+          <span class="banner__sum"> {{ currency.euro }} {{ sum}}</span>
+          <span class="banner__desc"> Без комиссии</span>
+        </div>
+        <div class="banner-right">
+          <button type='button' class="banner__button"> Оплатить</button>
+        </div>
+      </div>
+     
+    </Banner>
   </div>
 </template>
 
 <script>
 import InputSum from "../components/input-sum";
 import PaymentCard from "../components/payment-card";
-import inputCheckbox from "../components/input-checkbox";
+import InputCheckbox from "../components/input-checkbox";
+import Banner from "../components/banner";
 
 export default {
   name: "payment-page",
@@ -27,7 +41,8 @@ export default {
    components: {
     InputSum,
     PaymentCard,
-    inputCheckbox
+    InputCheckbox,
+    Banner
   },
   data() {
     return {
@@ -58,4 +73,45 @@ export default {
   margin: 0 auto;
   background: lightgray;
 }
+.payment__banner{
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  .banner__button{
+    width: 295px;
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .banner-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner__title{
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+
+  .banner-right{
+    display: flex;
+    align-items: center;
+  }
+  .banner__sum{
+    font-weight: bold;
+    font-size: 30px;
+    color: #4F4F4F;
+    margin-bottom: 5px;
+  }
+  .banner__desc{
+    color: transparentize($color: #333333, $amount: 0.36);
+    font-size: 12px;
+  }
+}
+
+
 </style>
