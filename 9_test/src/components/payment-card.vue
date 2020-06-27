@@ -4,7 +4,7 @@
       <div class="card-front__header">
         <div class="card-front-header__left">
           <span class="card-front-header__paying">Paying:</span>
-          <span class="card-front-header__sum" v-show="sum">{{ currency }} {{ sum }}</span>
+          <span class="card-front-header__sum">{{ currency }} {{ sum }}</span>
         </div>
         <div class="card-front-header__right">
           <img :src="require('../assets/images/svg/mastercard.svg')" class="mastercard" />

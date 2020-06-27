@@ -56,8 +56,13 @@ export default {
   methods: {
     changeSum(sum){
       console.log(typeof sum)
-      this.sum = sum;
-    }
+      if (sum !== sum){
+        this.sum = 0;
+      } else {
+        this.sum = sum;
+      }
+    },
+
   },
 };
 </script>
