@@ -19,6 +19,10 @@
             class="card__input"
             id="card-number"
             placeholder="0000 - 0000 - 0000 - 0000"
+            v-model="cardNumber"
+            @keydown="cardNumberVerification"
+            maxlength="23"
+            v-numeric-only
           />
         </div>
       </div>
@@ -33,17 +37,22 @@
           <span class="card-front__label">Expiration date</span>
           <div class="card__input-wrapper">
             <input
-              type="number"
+              type="text"
               class="card__input card__input-small"
               id="card-holder"
               placeholder="01"
+              v-numeric-only
+              maxlength="2"
+
             />
             <span class="separator">/</span>
             <input
-              type="number"
+              type="text"
               class="card__input card__input-small"
               id="card-holder"
               placeholder="24"
+              maxlength="2"
+              v-numeric-only
             />
           </div>
         </div>
@@ -53,7 +62,7 @@
       <div class="card-back_cvc-wrapper">
         <div class="card__input-wrapper">
           <label for="card-number">CVC/CVV</label>
-          <input type="password" class="card__input card__input-medium" id="cvc" placeholder="•••" />
+          <input type="password" class="card__input card__input-medium" id="cvc" placeholder="•••" v-numeric-only maxlength='4' />
         </div>
         <span class="card__input-desc">Last 3 or 4 digits</span>
       </div>
@@ -81,10 +90,35 @@ export default {
   },
 
   data() {
-    return {};
+    return {
+      cardNumber: ""
+    };
   },
-  methods: {}
+  methods: {
+    cardNumberVerification(e) {
+         let index = this.cardNumber.lastIndexOf("-");
+         let test = this.cardNumber.substr(index + 1);
+        if ([46, 8, 9, 27, 13, 110, 190].indexOf(e.keyCode) !== -1 ||
+        // Allow: Ctrl+A
+        (e.keyCode === 65 && e.ctrlKey === true) ||
+        // Allow: Ctrl+C
+        (e.keyCode === 67 && e.ctrlKey === true) ||
+        // Allow: Ctrl+X
+        (e.keyCode === 88 && e.ctrlKey === true) ||
+        // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+        // let it happen, don't do anything
+        return
+      }
+        if (test.length === 4 && this.cardNumber.length < 20) {
+          this.cardNumber = this.cardNumber + "-";
+        } 
+          
+    }
+  },
 };
+
+//
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

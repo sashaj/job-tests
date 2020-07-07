@@ -1,6 +1,5 @@
 <template>
   <div class="payment-page">
-    payment page 1
     <InputSum 
       :currency="currency.euro"
       @inputSumChange="changeSum">
@@ -55,7 +54,6 @@ export default {
   },
   methods: {
     changeSum(sum){
-      console.log(typeof sum)
       if (sum !== sum){
         this.sum = 0;
       } else {

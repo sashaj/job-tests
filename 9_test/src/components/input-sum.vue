@@ -2,11 +2,11 @@
   <div class="input-sum">
     <span class='input-sum__currency'>{{ currency }}</span>
      <input 
-        type="number" 
-        placeholder='Enter sum' 
+        type="text" 
+        placeholder='Enter a sum' 
         class=""
-        v-model="inputSumInEuro"
         @keyup='inputSumChange($event.target.value)'
+        oninput = "value=value.replace(/[^\d]/g,'')"
         >
   </div>
 </template>
@@ -22,16 +22,20 @@ export default {
   },  
   data() {
     return {
-        inputSumInEuro: ''
+      
     };
   },
   methods: {
       inputSumChange(value){
+        console.log(value)
         this.$emit("inputSumChange", parseInt(value));
       }
   },
-  computed: {
-
+  watch: {
+    inputSumInEuro(value) {
+      console.log('validation')
+      return /^\d*\.?\d*$/.test(value); // Allow digits and '.' only, using a RegExp      
+    }
   }
 };
 </script>

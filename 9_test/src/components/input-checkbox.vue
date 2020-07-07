@@ -3,7 +3,7 @@
    <div class="form__input-checkbox">
    <label class="checkbox">Привяжите карту для быстрого пополнения баланса по SMS, USSD
 и подключения автоплатежей.
-     <input type="checkbox" name="user-terms" id="user-terms" data-com.bitwarden.browser.user-edited="yes">
+     <input type="checkbox" name="user-terms" id="user-terms">
      <span class="checkbox__checkmark"></span>    
     </label>
    <!-- <div class="tippy">agree to the terms</div> -->
