@@ -7,6 +7,9 @@
         class=""
         @keyup='inputSumChange($event.target.value)'
         oninput = "value=value.replace(/[^\d]/g,'')"
+        maxlength="8"
+        name="input__sum"
+        :class="{ error: form.input__sum }"
         >
   </div>
 </template>
@@ -19,6 +22,12 @@ export default {
        type: String,
        default: ''
     },
+     form: {
+      type: Object,
+      default: function() {
+        return {};
+      }
+    }
   },  
   data() {
     return {
