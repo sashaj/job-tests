@@ -39,7 +39,7 @@
               placeholder="Michael Nagarov" 
               :class="{ error: form.card__holder }"
               oninput = "value=value.toUpperCase()"
-              :v-model="cardHolder"
+              v-model="cardHolder"
               />
           </div>
         </div>
@@ -54,7 +54,7 @@
               v-numeric-only
               maxlength="2"
               :class="{ error: form.card__exp_month }"
-              :v-model="cardExpMonth"
+              v-model="cardExpMonth"
               
             />
             <span class="separator">/</span>
@@ -66,7 +66,7 @@
               maxlength="2"
               v-numeric-only
               :class="{ error: form.card__exp_year }"
-              :v-model="cardExpYear"
+              v-model="cardExpYear"
 
             />
           </div>
@@ -119,7 +119,10 @@ export default {
       type: Object,
       default: function() {
         return {
-
+          cardNumber: "",
+          cardHolder: '',
+          cardExpMonth: '',
+          cardExpYear: '',          
         };
       }
     },  
@@ -156,13 +159,7 @@ export default {
     }
   },
   created(){
-      if (this.userData.number){
-      this.cardNumber = this.userData.number;
-    } 
-
-      this.cardHolder = this.userData.name.toUpperCase() + ' ' + this.userData.surname.toUpperCase();
-    
-     
+        if (this.userData.date){
         const dateObj = new Date(parseFloat(this.userData.date));
         let month = (dateObj.getMonth()+ 1).toString();
         let year = dateObj.getUTCFullYear().toString().substring(2);
@@ -170,8 +167,12 @@ export default {
           month = '0' + month;
         }
         this.cardExpMonth = month;
-        this.cardExpYear = year;
-    
+        this.cardExpYear = year;       
+        this.cardNumber = this.userData.number;
+        this.cardHolder = this.userData.name.toUpperCase() + ' ' + this.userData.surname.toUpperCase();
+        }
+
+        
   }
 };
 

@@ -36,13 +36,11 @@ export default {
   },
   methods: {
       inputSumChange(value){
-        console.log(value)
         this.$emit("inputSumChange", parseInt(value));
       }
   },
   watch: {
     inputSumInEuro(value) {
-      console.log('validation')
       return /^\d*\.?\d*$/.test(value); // Allow digits and '.' only, using a RegExp      
     }
   }

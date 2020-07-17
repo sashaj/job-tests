@@ -76,11 +76,7 @@ export default {
     showPopup() {
       this.isPopupVisible = true;
     },
-    checkForm() {
-      if (this.sum == 0) {
-        console.log("you can not pay 0");
-      }
-    },
+ 
     verifyForm(e) {
       const form = e.target;
       e.preventDefault;
@@ -91,13 +87,11 @@ export default {
       if (this.form.input__sum == 0) {
         this.form.errorClass.input__sum = true;
 
-        console.log("error:sum 0");
       } else {
         this.form.errorClass.input__sum = false;
       }
       if (this.form.card__number.length < 19) {
         this.form.errorClass.card__number = true;
-        console.log("error: card number length");
       } else {
         this.form.errorClass.card__number = false;
       }
@@ -107,7 +101,6 @@ export default {
       ) {
         this.form.errorClass.card__holder = true;
 
-        console.log("error: card owner russian letters || length");
       } else {
         this.form.errorClass.card__holder = false;
       }
@@ -116,7 +109,6 @@ export default {
         this.form.card__exp_month.length < 1
       ) {
         this.form.errorClass.card__exp_month = true;
-        console.log("error: card exp month bigger than 12");
       } else {
         this.form.errorClass.card__exp_month = false;
       }
@@ -125,13 +117,11 @@ export default {
         this.form.card__exp_year.length < 2
       ) {
         this.form.errorClass.card__exp_year = true;
-        console.log("error: card exp year less than 20");
       } else {
         this.form.errorClass.card__exp_year = false;
       }
       if (this.form.card__cvc.length < 3) {
         this.form.errorClass.card__cvc = true;
-        console.log("error: card cvc length");
       } else {
         this.form.errorClass.card__cvc = false;
       }
@@ -143,8 +133,8 @@ export default {
       }
     },
     pseudoSendForm(form) {
+      console.log(form);
       setTimeout(() => {
-        console.log(form);
         this.isPopupVisible = true;
       }, 1000);
     }
